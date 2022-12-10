@@ -29,7 +29,8 @@ jobs:
     
     # Get flutter dependencies.
     - run: flutter pub get
-    
+    # Build ios test.
+    - run: flutter build ios
     # Build apk.
     - run: flutter build apk
     - name: Set up python
